@@ -1,1 +1,59 @@
 
+Matplotlib 설명
+Matplotlib는 파이썬에서 데이터를 시각적으로 표현하기 위한 가장 널리 사용되는 라이브러리입니다. 선 그래프, 산점도, 히스토그램, 막대그래프 등 다양한 형태의 2D(그리고 일부 3D) 그래프를 손쉽게 생성할 수 있습니다.
+
+주요 특징
+
+다양한 그래프 유형 지원: 선 그래프, 산점도, 히스토그램, 막대그래프 등 여러 형태의 시각화를 만들 수 있습니다.
+
+세밀한 커스터마이징: 그래프의 색상, 선 스타일, 마커, 축, 제목, 범례 등 거의 모든 요소를 자유롭게 조정할 수 있습니다.
+
+다양한 출력 형식: 그래프를 PNG, JPG, SVG, PDF 등 다양한 파일 형식으로 저장할 수 있습니다.
+
+다른 라이브러리와의 호환성: Pandas, NumPy 등 데이터 분석 라이브러리와 잘 연동되어 데이터프레임이나 배열을 바로 시각화할 수 있습니다.
+
+플랫폼 독립적: 파이썬과 NumPy만 설치되어 있다면 어느 운영체제에서든 동작합니다.
+
+GUI 툴킷과 통합: PyQt, wxPython, Tkinter 등 다양한 GUI 툴킷과 연동하여 인터랙티브한 시각화도 가능합니다.
+
+기본 사용법 예시
+
+python
+import matplotlib.pyplot as plt
+import numpy as np
+
+# 데이터 생성
+x = np.linspace(0, 10, 100)
+y = np.sin(x)
+
+# 선 그래프 그리기
+plt.plot(x, y)
+plt.title("Sin Graph")
+plt.xlabel("X values")
+plt.ylabel("Sin values")
+plt.show()
+이 코드는 0부터 10까지의 x값에 대한 sin 함수를 선 그래프로 그립니다.
+
+그래프 꾸미기
+
+title(), xlabel(), ylabel()로 제목과 축 이름 추가
+
+legend()로 범례 추가
+
+plot()의 color, linestyle, marker 옵션으로 선의 색, 스타일, 마커 모양 지정
+
+xlim(), ylim()으로 축의 범위 설정
+
+grid(True)로 격자 표시
+
+설치 및 불러오기
+
+설치:
+
+text
+pip install matplotlib
+불러오기(관례적으로 plt로 사용):
+
+python
+import matplotlib.pyplot as plt
+Matplotlib는 파이썬 데이터 분석과 시각화의 기본이 되는 라이브러리로, 복잡한 데이터도 직관적으로 한눈에 파악할 수 있게 도와줍니다
